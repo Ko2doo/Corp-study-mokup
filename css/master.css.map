@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,KAAK,EAAE,IAAI",
+"sources": ["../sass/block/_header.scss"],
+"names": [],
+"file": "master.css"
+}
