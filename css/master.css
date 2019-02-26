@@ -206,4 +206,108 @@ html, body {
   color: #ffffff;
 }
 
+.meter {
+  padding: 20px 0 20px 0;
+  height: auto;
+  background: #088389;
+}
+.meter .meter-block {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.meter .meter-box {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.meter .meter-box .left {
+  margin-right: 16px;
+}
+.meter .meter-box .left span.qty {
+  font-size: 40px;
+  font-weight: 450;
+  color: #ffffff;
+}
+.meter .meter-box .right span.description {
+  font-size: 14px;
+  color: #ffffff;
+}
+.meter .support-info {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  height: 95px;
+  position: relative;
+  background: #ffffff;
+}
+.meter .support-info .support-table {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 67%;
+  padding: 0 13px 0 13px;
+}
+.meter .support-info .support-table span.work-time {
+  font-size: 40px;
+  font-weight: 600;
+  margin-right: 23px;
+}
+.meter .support-info .support-table span.text {
+  font-size: 16px;
+  font-weight: 650;
+}
+.meter .support-info .clock-block {
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00b1ba;
+}
+.meter .support-info .clock-block a.click-here {
+  font-size: 14px;
+  font-weight: 450;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=master.css.map */
