@@ -1,0 +1,99 @@
+.meter{
+	padding: 20px 0 20px 0;
+	height: auto;
+	background: $background-darkGreen;
+
+		.meter-block{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.meter-box{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+				.left{
+					margin-right: 16px;
+					span.qty{
+						font:{
+							size: 40px;
+							weight: 450;
+						}
+						color: $general-color;
+					}
+				}
+				.right{
+					span.description{
+						font-size: 14px;
+						color: $general-color;
+					}
+				}
+		}
+		.support-info{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			width: 270px;
+			height: 95px;
+			position: relative;
+			background: $general-color;
+				
+				.support-table{
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					align-items: center;
+					width: 67%;
+					padding: 0 13px 0 13px;
+
+						span.work-time{
+							font:{
+								size: 40px;
+								weight: 600;
+							}
+							margin-right: 23px;
+						}
+						span.text{
+							font:{
+								size: 16px;
+								weight: 650;
+							}
+						}
+				}
+					.clock-block{
+						position: relative;
+							right: 0;
+							top: 0;
+							bottom: 0;
+						height: auto;
+						display: -webkit-flex;
+						display: -moz-flex;
+						display: -ms-flex;
+						display: -o-flex;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: $background-lightGreen;
+
+							a.click-here{
+								font:{
+									size: 14px;
+									weight: 450;
+								}
+								transform: rotate(-90deg);
+								color: $general-color;
+							}
+					}
+		}
+}
