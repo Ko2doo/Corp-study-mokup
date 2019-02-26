@@ -1,6 +1,26 @@
-//переменные:
+//подготовим основные цвета и запишим в переменные:
 
-//end
+//Цвета Для текста
+$general-color: #ffffff;
+$general-color-hover: #1babb3;
+$black-color: #000000;
+$darkGrey-color: #5e5d5d;
+$lightGrey-color: #929191;
+//---------------------------------
+//Цвета для фона
+$background-darkGreen: #088389;
+$background-lightGreen: #00b1ba;
+//---------------------------------
+//Линии
+$border-darkGrey: 2px solid #5c5c5c;
+
+//---------------------------------
+//миксины, а то как же это без них?
+@mixin text-mark{
+	.text-mark-green{
+		color: #42bdc4;
+	}
+}
 
 //импортируем файлы:
 @import "block/_header.scss";

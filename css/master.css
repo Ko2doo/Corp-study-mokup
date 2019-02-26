@@ -8,6 +8,10 @@ ul, li, a {
   text-decoration: none;
 }
 
+.text-mark-green {
+  color: #42bdc4;
+}
+
 .header {
   height: 45px;
   display: block;
