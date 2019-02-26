@@ -7,17 +7,102 @@ ul,li,a{
 	list-style: none;
 	text-decoration: none;
 }
+html,body{
+	@include openSans-light;
+}
+
+//шрифты
+@font-face{
+  font-family: OpenSans-Regular;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face{
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+@font-face{
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
 
 //Вызываем миксины
+@include content-container;
+@include text-mark;
 @include text-mark;
 
-.header{
-	height: 45px;
-	display: block;
-	padding: 8px;
-	background: #3c3c3c;
 
-		p.headline{
-			color: #c1c1c1;
+.header{
+	background: url(../images/slide.jpg) no-repeat top right;
+	height: 664px;
+	
+	.logotipTop{
+		margin-top: 18px;
+		display: block;
+			img{
+				max-width: 219px;
+				width: 100%;
+				height: auto;
+			}
+	}
+
+	nav.navigator{
+		display: block;
+		margin-top: 53px;
+		width: 100%;
+			ul,li{
+				display: inline-block;
+			}
+			li{
+				margin-right: 42px;
+			}
+			li,a{
+				@include openSans-regular;
+				color: $general-color;
+				transition: color $easeOut-3s;
+					&:hover{
+						color: $general-color-hover;
+						transition: color $easeIn-2s;
+					}
+			}
+	}
+
+	.tile-block{
+		max-width: 370px;
+		width: 100%;
+		height: auto;
+
+		.block-box{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 50px;
+			width: 100%;
+				.box{
+					width: 185px;
+					height: 185px;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					background: $background-darkGreen;
+						&:nth-child(2){
+							background: $background-lightGreen;
+						}
+						&:nth-child(3){
+							background: $background-lightGreen;
+						}
+						.icon{
+							font-size: 60px;
+							color: $general-color;
+						}
+				}
 		}
+	}
 }

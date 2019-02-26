@@ -15,12 +15,53 @@ $background-lightGreen: #00b1ba;
 $border-darkGrey: 2px solid #5c5c5c;
 
 //---------------------------------
+//Анимации!
+$easeIn-2s: 0.2s ease-in;
+$easeOut-3s: 0.3s ease-out;
+//---------------------------------
 //миксины, а то как же это без них?
 @mixin text-mark{
 	.text-mark-green{
 		color: #42bdc4;
 	}
 }
+
+@mixin content-container{
+	.content-container{
+		max-width: 1173px;
+		width: 100%;
+		height: auto;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0 20px 0 20px;
+		margin: 0 auto;
+	}
+}
+
+@mixin openSans-regular{
+	font:{
+		family: 'OpenSans-Regular';
+		weight: 400;
+	}
+}
+@mixin openSans-bold{
+	font:{
+		family: 'OpenSans-Bold';
+		weight: 700;
+	}
+}
+@mixin openSans-light{
+	font:{
+		family: 'OpenSans-Light';
+		weight: 300;
+	}
+}
+
 
 //импортируем файлы:
 @import "block/_header.scss";
