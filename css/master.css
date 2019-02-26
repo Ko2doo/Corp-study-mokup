@@ -55,10 +55,22 @@ html, body {
 
 .header {
   background: url(../images/slide.jpg) no-repeat top right;
-  height: 664px;
+  height: auto;
+  padding: 18px 0px 50px 0px;
+}
+.header .custom-container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
 }
 .header .logotipTop {
-  margin-top: 18px;
   display: block;
 }
 .header .logotipTop img {
@@ -90,9 +102,13 @@ html, body {
   transition: color 0.2s ease-in;
 }
 .header .tile-block {
-  max-width: 370px;
-  width: 100%;
-  height: auto;
+  margin-top: 50px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .header .tile-block .block-box {
   display: -moz-flex;
@@ -103,8 +119,10 @@ html, body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 50px;
   width: 100%;
+  max-width: 370px;
+  height: auto;
+  position: relative;
 }
 .header .tile-block .block-box .box {
   width: 185px;
@@ -128,13 +146,63 @@ html, body {
   background: #088389;
 }
 .header .tile-block .block-box .box:nth-child(2) {
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  background: #00b1ba;
+}
+.header .tile-block .block-box .box:nth-child(2):hover {
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  background: #088389;
+}
+.header .tile-block .block-box .box:nth-child(2):hover:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 185px;
+  height: 185px;
   background: #00b1ba;
 }
 .header .tile-block .block-box .box:nth-child(3) {
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  background: #00b1ba;
+}
+.header .tile-block .block-box .box:nth-child(3):hover {
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  background: #088389;
+}
+.header .tile-block .block-box .box:nth-child(3):hover:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 185px;
+  height: 185px;
   background: #00b1ba;
 }
 .header .tile-block .block-box .box .icon {
   font-size: 60px;
+  z-index: 15;
+  color: #ffffff;
+}
+.header .tile-block .block-box .box .text-info {
+  margin-top: 32px;
+  font-size: 18px;
+  z-index: 15;
+  color: #ffffff;
+}
+.header .tile-block .text-block {
+  margin-left: 30px;
+}
+.header .tile-block .text-block h1.headline-big {
+  font-size: 50px;
+  display: inline-block;
+  color: #1babb3;
+}
+.header .tile-block .text-block p {
+  font-size: 18px;
+  margin-top: 51px;
   color: #ffffff;
 }
 
