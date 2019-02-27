@@ -311,15 +311,3 @@ html, body {
 }
 
 /*# sourceMappingURL=master.css.map */
-
-/* Блок Welcome*/
-
-.welcome{
-  text-align: center;
-}
-
-.welcome_headling{
-  font-family: "OpenSans-Light";
-  src: url("../fonts/OpenSans-Light.ttf");
-  font-size: 72px;
-}
