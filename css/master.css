@@ -54,6 +54,11 @@ html, body {
   color: #000;
 }
 
+.text-mark-grey {
+  font-weight: bold;
+  color: #5e5d5d;
+}
+
 .headline-mini {
   text-align: center;
 }
@@ -391,7 +396,7 @@ html, body {
   text-align: left;
 }
 .about .aboutUs-information {
-  padding: 73px 37px;
+  padding: 73px 0 37px 0;
 }
 .about .aboutUs-information .dynamic-box {
   display: -moz-flex;
@@ -428,6 +433,9 @@ html, body {
   margin-top: 28px;
   font-size: 14px;
   color: #5e5d5d;
+}
+.about .offer {
+  padding: 37px 0 37px 0;
 }
 .about .offer .offer-boxing {
   display: -moz-flex;
@@ -487,6 +495,44 @@ html, body {
 .about .offer .offer-boxing .box span.text-box {
   margin-top: 24px;
   display: block;
+  font-size: 14px;
+}
+.about .our-staff {
+  padding: 37px 0 37px 0;
+}
+.about .our-staff .staff-cards {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about .our-staff .card {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  padding: 0 15px 0 15px;
+}
+.about .our-staff .card .card-header img {
+  width: 100%;
+  border: 1px solid #929191;
+}
+.about .our-staff .card .card-body {
+  margin-top: 38px;
+}
+.about .our-staff .card .card-body span.staff-name {
+  display: block;
+  font-size: 16px;
+}
+.about .our-staff .card .card-body p.text-block {
+  margin-top: 16px;
   font-size: 14px;
 }
 
