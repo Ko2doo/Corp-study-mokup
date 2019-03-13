@@ -24,6 +24,10 @@ $easeOut-3s: 0.3s ease-out;
 	.text-mark-green{
 		color: #42bdc4;
 	}
+	.text-mark-black{
+		font-weight: bold;
+		color: #000;
+	}
 }
 
 @mixin content-container{
@@ -61,11 +65,30 @@ $easeOut-3s: 0.3s ease-out;
 		weight: 300;
 	}
 }
+@mixin headline{
+	.headline-mini{
+		text-align: center;
+			h2{
+				font:{
+					size: 22px;
+					weight: bold;
+				}
+				color: $black-color;
+			}
+	}
+}
 
 
 //импортируем файлы:
 @import "block/_header.scss";
+
+//основные файлы
 @import "block/_meter.scss";
 @import "block/_company-info.scss";
+
+//другие документы
+@import "block/others/_about.scss";
+
 @import "block/_footer.scss";
+
 //end
