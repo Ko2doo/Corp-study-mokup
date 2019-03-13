@@ -28,7 +28,7 @@ html,body{
 //Вызываем миксины
 @include content-container;
 @include text-mark;
-@include text-mark;
+@include headline;
 
 
 .header{

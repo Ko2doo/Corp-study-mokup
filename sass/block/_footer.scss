@@ -1,0 +1,26 @@
+.footer{
+	height: 85px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	background-color: $background-lightGreen;
+
+	.foot-info{
+		
+		span{
+			font-size: 22px;
+			color: $lightGrey-color;
+
+				a{
+					color: $darkGrey-color;
+				}
+		}
+		span.designed{
+			font-size: 14px;
+			color: $lightGrey-color;
+		}
+	}
+}

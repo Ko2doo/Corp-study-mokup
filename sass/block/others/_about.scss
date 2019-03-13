@@ -1,0 +1,141 @@
+.about{
+	//Начало описания всего и вся документе (about.html)
+
+	.modernized{
+		background: url(../images/slide.jpg) no-repeat top;
+		height: auto;
+		padding: 18px 0px 50px 0px;
+	}
+	.headline-mini{
+		text-align: left;
+	}
+	.aboutUs-information{
+		padding: 73px 0 37px 0;
+
+		.dynamic-box{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 35px;
+			.image-box{
+				width: 25%;
+				height: auto;
+				display: block;
+					img{
+						width: 100%;
+						height: auto;
+					}
+			}
+			.text-box{
+				width: 70%;
+				height: auto;
+				display: block;
+					.text-mark-black{
+						font-size: 16px;
+					}
+					.no-mark{
+						margin-top: 28px;
+						font-size: 14px;
+						color: $darkGrey-color;
+					}
+			}
+		}
+	}
+
+	.offer{
+		padding: 37px 0 37px 0;
+		.offer-boxing{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			margin-top: 35px;
+				.box{
+					width: 32%;
+					height: auto;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+						.number{
+							border-radius: 50%;
+							width: 65px;
+							height: 65px;
+							display: -webkit-inline-flex;
+							display: -moz-inline-flex;
+							display: -ms-inline-flex;
+							display: -o-inline-flex;
+							display: inline-flex;
+							justify-content: center;
+							align-items: center;
+							background: $background-lightGreen;
+								span.numb{
+									display: inline-block;
+									font-size: 32px;
+									color: $general-color;
+								}
+						}
+						.body{
+							width: 70%;
+							padding-left: 30px;
+						}
+						span.headline-box{
+							font-size: 18px;
+							display: block;
+						}
+						span.text-box{
+							margin-top: 24px;
+							display: block;
+							font-size: 14px;
+						}
+				}
+		}
+	}
+
+	.our-staff{
+		padding: 37px 0 37px 0;
+
+			.staff-cards{
+				width: 100%;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.card{
+				width: 20%;
+				height: auto;
+				display: inline-block;
+				padding: 0 15px 0 15px;
+				.card-header{
+
+					img{
+						width: 100%;
+						border: 1px solid $lightGrey-color;
+					}
+				}
+				.card-body{
+					margin-top: 38px;
+					span.staff-name{
+						display: block;
+						font-size: 16px;
+					}
+					p.text-block{
+						margin-top: 16px;
+						font-size: 14px;
+					}
+				}
+			}
+	}
+}
