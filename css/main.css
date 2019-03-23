@@ -1,246 +1,42 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0; }
+/*
+Error: Invalid CSS after ".../_welcome.scss"": expected "{", was ";"
+        on line 92 of F:\web\Corp-study-mokup\sass\main.scss
 
-ul, li, a {
-  list-style: none;
-  text-decoration: none; }
+87: @import "block/_header.scss";
+88: 
+89: //основные файлы
+90: @import "block/_meter.scss";
+91: <<<<<<< HEAD
+92: @import "block/_welcome.scss";
+93: //end
+94: =======
+95: >>>>>>> 5f0261384db7749f2ab4c36d1422278f39f89725
+96: @import "block/_company-info.scss";
+97: 
 
-html, body {
-  font-family: 'OpenSans-Light';
-  font-weight: 300; }
-
-@font-face {
-  font-family: OpenSans-Regular;
-  src: url("../fonts/OpenSans-Regular.ttf"); }
-@font-face {
-  font-family: "OpenSans-Light";
-  src: url("../fonts/OpenSans-Light.ttf"); }
-@font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/OpenSans-Bold.ttf"); }
-.content-container {
-  max-width: 1173px;
-  width: 100%;
-  height: auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0 20px 0 20px;
-  margin: 0 auto; }
-
-.text-mark-green {
-  color: #42bdc4; }
-
-.text-mark-green {
-  color: #42bdc4; }
-
-.header {
-  background: url(../images/slide.jpg) no-repeat top right;
-  height: auto;
-  padding: 18px 0px 50px 0px; }
-  .header .custom-container {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: initial; }
-  .header .logotipTop {
-    display: block; }
-    .header .logotipTop img {
-      max-width: 219px;
-      width: 100%;
-      height: auto; }
-  .header nav.navigator {
-    display: block;
-    margin-top: 53px;
-    width: 100%; }
-    .header nav.navigator ul, .header nav.navigator li {
-      display: inline-block; }
-    .header nav.navigator li {
-      margin-right: 42px; }
-    .header nav.navigator li, .header nav.navigator a {
-      font-family: 'OpenSans-Regular';
-      font-weight: 400;
-      color: #ffffff;
-      transition: color 0.3s ease-out; }
-      .header nav.navigator li:hover, .header nav.navigator a:hover {
-        color: #1babb3;
-        transition: color 0.2s ease-in; }
-  .header .tile-block {
-    margin-top: 50px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex; }
-    .header .tile-block .block-box {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 370px;
-      height: auto;
-      position: relative; }
-      .header .tile-block .block-box .box {
-        width: 185px;
-        height: 185px;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background: #088389; }
-        .header .tile-block .block-box .box:nth-child(2) {
-          transition: background-color 0.3s ease-out;
-          background: #00b1ba; }
-          .header .tile-block .block-box .box:nth-child(2):hover {
-            transition: background-color 0.2s ease-in;
-            background: #088389; }
-            .header .tile-block .block-box .box:nth-child(2):hover:before {
-              content: '';
-              position: absolute;
-              left: 0;
-              width: 185px;
-              height: 185px;
-              background: #00b1ba; }
-        .header .tile-block .block-box .box:nth-child(3) {
-          transition: background-color 0.3s ease-out;
-          background: #00b1ba; }
-          .header .tile-block .block-box .box:nth-child(3):hover {
-            transition: background-color 0.2s ease-in;
-            background: #088389; }
-            .header .tile-block .block-box .box:nth-child(3):hover:before {
-              content: '';
-              position: absolute;
-              right: 0;
-              width: 185px;
-              height: 185px;
-              background: #00b1ba; }
-        .header .tile-block .block-box .box .icon {
-          font-size: 60px;
-          z-index: 15;
-          color: #ffffff; }
-        .header .tile-block .block-box .box .text-info {
-          margin-top: 32px;
-          font-size: 18px;
-          z-index: 15;
-          color: #ffffff; }
-    .header .tile-block .text-block {
-      margin-left: 30px; }
-      .header .tile-block .text-block h1.headline-big {
-        font-size: 50px;
-        display: inline-block;
-        color: #1babb3; }
-      .header .tile-block .text-block p {
-        font-size: 18px;
-        margin-top: 51px;
-        color: #ffffff; }
-
-.meter {
-  padding: 20px 0 20px 0;
-  height: auto;
-  background: #088389; }
-  .meter .meter-block {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .meter .meter-box {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    align-items: center; }
-    .meter .meter-box .left {
-      margin-right: 16px; }
-      .meter .meter-box .left span.qty {
-        font-size: 40px;
-        font-weight: 450;
-        color: #ffffff; }
-    .meter .meter-box .right span.description {
-      font-size: 14px;
-      color: #ffffff; }
-  .meter .support-info {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    width: 270px;
-    height: 95px;
-    position: relative;
-    background: #ffffff; }
-    .meter .support-info .support-table {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      align-items: center;
-      width: 67%;
-      padding: 0 13px 0 13px; }
-      .meter .support-info .support-table span.work-time {
-        font-size: 40px;
-        font-weight: 600;
-        margin-right: 23px; }
-      .meter .support-info .support-table span.text {
-        font-size: 16px;
-        font-weight: 650; }
-    .meter .support-info .clock-block {
-      position: relative;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      height: auto;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #00b1ba; }
-      .meter .support-info .clock-block a.click-here {
-        font-size: 14px;
-        font-weight: 450;
-        transform: rotate(-90deg);
-        color: #ffffff; }
-
-/* Блок Welcome*/
-.welcome {
-  display: block;
-  margin: 65px auto;
-  width: 810px;
-  height: 212px;
-  text-align: center;
-  overflow: hidden; }
-
-.welcome .welcome_headling {
-  font-family: 'OpenSans-Light';
-  font-weight: 300;
-  font-size: 72px; }
-
-.welcome:first-of-type p {
-  font-size: 16px; }
-
-.welcome:last-of-type p {
-  font-size: 14px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+F:\web\Corp-study-mokup\sass\main.scss:92
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \".../_welcome.scss\"\": expected \"{\", was \";\"\A         on line 92 of F:\web\Corp-study-mokup\sass\main.scss\A \A 87: @import \"block/_header.scss\";\A 88: \A 89: //основные файлы\A 90: @import \"block/_meter.scss\";\A 91: <<<<<<< HEAD\A 92: @import \"block/_welcome.scss\";\A 93: //end\A 94: =======\A 95: >>>>>>> 5f0261384db7749f2ab4c36d1422278f39f89725\A 96: @import \"block/_company-info.scss\";\A 97: "; }
