@@ -7,14 +7,15 @@
   height: 212px;
   text-align: center;
   overflow: hidden;
-}
-  .welcome .welcome_headling {
+.welcome_headling {
     font-family: 'OpenSans-Light';
     font-weight: 300;
     font-size: 72px; }
-  .welcome:first-of-type p{
+
+&:first-of-type p{
     font-size: 16px;
   }
-  .welcome:last-of-type p{
+&:last-of-type p{
     font-size: 14px;
   }
+}

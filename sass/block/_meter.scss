@@ -46,7 +46,7 @@
 			height: 95px;
 			position: relative;
 			background: $general-color;
-				
+
 				.support-table{
 					display: -webkit-flex;
 					display: -moz-flex;
@@ -91,6 +91,7 @@
 									size: 14px;
 									weight: 450;
 								}
+								padding: auto;
 								transform: rotate(-90deg);
 								color: $general-color;
 							}
