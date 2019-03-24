@@ -1,0 +1,53 @@
+.offer{
+  padding: 37px 0 37px 0;
+  .offer-boxing{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 35px;
+      .box{
+        width: 32%;
+        height: auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+          .number{
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            display: -webkit-inline-flex;
+            display: -moz-inline-flex;
+            display: -ms-inline-flex;
+            display: -o-inline-flex;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: $background-lightGreen;
+              span.numb{
+                display: inline-block;
+                font-size: 32px;
+                color: $general-color;
+              }
+          }
+          .body{
+            width: 70%;
+            padding-left: 30px;
+          }
+          span.headline-box{
+            font-size: 18px;
+            display: block;
+          }
+          span.text-box{
+            margin-top: 24px;
+            display: block;
+            font-size: 14px;
+          }
+      }
+  }
+}

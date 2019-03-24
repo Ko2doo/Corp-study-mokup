@@ -1,0 +1,36 @@
+.aboutUs-information{
+  padding: 73px 0 37px 0;
+
+  .dynamic-box{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    .image-box{
+      width: 25%;
+      height: auto;
+      display: block;
+        img{
+          width: 100%;
+          height: auto;
+        }
+    }
+    .text-box{
+      width: 70%;
+      height: auto;
+      display: block;
+        .text-mark-black{
+          font-size: 16px;
+        }
+        .no-mark{
+          margin-top: 28px;
+          font-size: 14px;
+          color: $darkGrey-color;
+        }
+    }
+  }
+}

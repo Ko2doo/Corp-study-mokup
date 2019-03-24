@@ -1,0 +1,103 @@
+//подготовим основные цвета и запишим в переменные:
+
+//Цвета Для текста
+$general-color: #ffffff;
+$general-color-hover: #1babb3;
+$black-color: #000000;
+$darkGrey-color: #5e5d5d;
+$lightGrey-color: #929191;
+$service-bg-grey: #fafdfe;
+$quote-bg-grey: #f2f5f6;
+//---------------------------------
+//Цвета для фона
+$background-darkGreen: #088389;
+$background-lightGreen: #00b1ba;
+//---------------------------------
+//Линии
+$border-darkGrey: 2px solid #5c5c5c;
+
+//---------------------------------
+//Анимации!
+$easeIn-2s: 0.2s ease-in;
+$easeOut-3s: 0.3s ease-out;
+//---------------------------------
+//миксины, а то как же это без них?
+@mixin text-mark{
+	.text-mark-green{
+		color: #42bdc4;
+	}
+	.text-mark-black{
+		font-weight: bold;
+		color: #000;
+	}
+	.text-mark-grey{
+		font-weight: bold;
+		color: $darkGrey-color;
+	}
+}
+
+@mixin content-container{
+	.content-container{
+		max-width: 1173px;
+		width: 100%;
+		height: auto;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0 20px 0 20px;
+		margin: 0 auto;
+	}
+}
+
+@mixin openSans-regular{
+	font:{
+		family: 'OpenSans-Regular';
+		weight: 400;
+	}
+}
+@mixin openSans-bold{
+	font:{
+		family: 'OpenSans-Bold';
+		weight: 700;
+	}
+}
+@mixin openSans-light{
+	font:{
+		family: 'OpenSans-Light';
+		weight: 300;
+	}
+}
+@mixin headline{
+	.headline-mini{
+		text-align: center;
+			h2{
+				font:{
+					size: 22px;
+					weight: bold;
+				}
+				color: $black-color;
+			}
+	}
+}
+
+
+.about{
+	//Начало описания всего и вся документе (about.html)
+
+	.modernized{
+		background: url(../images/slide.jpg) no-repeat top;
+		height: auto;
+		padding: 18px 0px 50px 0px;
+	}
+	.headline-mini{
+		text-align: left;
+	}
+}
+
+@import "block/about/_about_us.scss";
+@import "block/about/_offer.scss";
+@import "block/about/_our_staff.scss";

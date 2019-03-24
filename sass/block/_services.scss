@@ -6,8 +6,6 @@
   flex-direction: row;
   padding-top: 65px;
   background-color: $service-bg-grey;
-  border-top: $border-darkGrey;
-  border-bottom: $border-darkGrey;
 
   .marketing{
   margin-top: 50px;
@@ -50,6 +48,14 @@
     text-align: left;
     overflow: hidden;
   }
+
+  a{
+    @include openSans-regular;
+  &:hover{
+    color: $general-color-hover;
+    transition: color $easeIn-2s;
+  }
+ }
 }
 
 .advantages{
