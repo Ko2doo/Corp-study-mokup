@@ -58,8 +58,10 @@ html, body {
     color: #000000; }
 
 .header {
-  background: url(../images/slide.jpg) no-repeat top right;
-  height: auto;
+  background: url(../images/slide.jpg) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
   padding: 18px 0px 50px 0px; }
   .header .custom-container {
     display: -moz-flex;
@@ -298,50 +300,116 @@ html, body {
     font-size: 14px; }
 
 .services {
+  width: 100%;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
-  .services .advantages {
-    display: -ms-flex;
+          flex-direction: row;
+  padding-top: 65px;
+  background-color: #fafdfe;
+  border-top: 2px solid #5c5c5c;
+  border-bottom: 2px solid #5c5c5c; }
+  .services .marketing {
+    margin-top: 50px; }
+
+.advantages-general-params {
+  padding: 0;
+  width: 660px;
+  height: 175px; }
+  .advantages-general-params img {
+    float: left;
+    clear: both;
+    margin-top: 5px;
+    margin-right: 32px; }
+  .advantages-general-params h3, .advantages-general-params p, .advantages-general-params a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .services .general-params {
-    display: -ms-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    padding: 0;
-    width: 660px;
-    height: 175px; }
-    .services .general-params h3 {
-      display: block;
-      margin-top: 0;
-      margin-left: 32px; }
-    .services .general-params p {
-      display: block;
-      width: 450px;
-      height: 95px;
-      margin-left: 32px;
-      margin-top: 17px;
-      margin-bottom: 17px;
-      font-size: 14px;
-      text-align: left;
-      overflow: hidden; }
-    .services .general-params a {
-      margin-left: 32px; }
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .advantages-general-params h3 {
+    display: block; }
+  .advantages-general-params p {
+    display: block;
+    width: 450px;
+    height: 95px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden; }
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 460px; }
+  .advantages .advantages-headling {
+    margin-bottom: 28px; }
+
+.testimonials-general-params {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 370px;
+  height: 175px;
+  background-color: #f2f5f6; }
+  .testimonials-general-params cite {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 260px;
+    height: 80px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden; }
+  .testimonials-general-params .author {
+    margin-top: 14px;
+    margin-right: 57px;
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    color: #5e5d5d;
+    opacity: .9; }
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 460px; }
+  .testimonials div:last-of-type {
+    margin-top: 50px; }
+  .testimonials .testimonials-headling {
+    margin-bottom: 28px; }
 
 .company-info .content-container {
   display: -moz-flex;

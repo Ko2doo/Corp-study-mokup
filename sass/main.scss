@@ -6,6 +6,8 @@ $general-color-hover: #1babb3;
 $black-color: #000000;
 $darkGrey-color: #5e5d5d;
 $lightGrey-color: #929191;
+$service-bg-grey: #fafdfe;
+$quote-bg-grey: #f2f5f6;
 //---------------------------------
 //Цвета для фона
 $background-darkGreen: #088389;
@@ -89,7 +91,7 @@ $easeOut-3s: 0.3s ease-out;
 //основные файлы
 @import "block/_meter.scss";
 @import "block/_welcome.scss";
-@import "block/_adventages.scss";
+@import "block/_services.scss";
 @import "block/_company-info.scss";
 
 //другие документы

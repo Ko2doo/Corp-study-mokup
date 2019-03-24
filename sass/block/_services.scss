@@ -1,0 +1,115 @@
+//Общие параметры
+.services{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 65px;
+  background-color: $service-bg-grey;
+  border-top: $border-darkGrey;
+  border-bottom: $border-darkGrey;
+
+  .marketing{
+  margin-top: 50px;
+  }
+}
+
+//---------------------------------
+
+//Блок Our advantages
+
+.advantages-general-params{
+  padding: 0;
+  width: 660px;
+  height: 175px;
+
+   img{
+   float: left;
+   clear: both;
+   margin-top: 5px;
+   margin-right: 32px;
+   }
+
+   h3,p,a{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   }
+
+   h3{
+   display: block;
+   }
+
+  p{
+    display: block;
+    width: 450px;
+    height: 95px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+  }
+}
+
+.advantages{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 460px;
+
+    .advantages-headling{
+      margin-bottom: 28px;
+    }
+  }
+
+  //---------------------------------
+
+  //Блок Testemonials
+
+  .testimonials-general-params{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 175px;
+    background-color: $quote-bg-grey;
+
+    cite{
+      display: inline-block;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      width: 260px;
+      height: 80px;
+      font-size: 14px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .author{
+      margin-top: 14px;
+      margin-right: 57px;
+      @include openSans-bold;
+      font-size: 16px;
+      text-align: right;
+      color: $darkGrey-color;
+      opacity: .9;
+    }
+  }
+
+  .testimonials{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 460px;
+
+    div:last-of-type{
+      margin-top: 50px;
+    }
+
+    .testimonials-headling{
+      margin-bottom: 28px;
+    }
+  }
