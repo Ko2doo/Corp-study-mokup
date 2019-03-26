@@ -1,10 +1,6 @@
 .company-info{
 
 	.content-container{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: nowrap;
@@ -28,7 +24,7 @@
 				}
 
 				ul.sol-list{
-					
+
 					li{
 						position: relative;
 						display: inline-block;
@@ -37,20 +33,13 @@
 						font-size: 16px;
 						color: $darkGrey-color;
 						&:before{
-							content: "";
-							position: absolute;
-								top: 50%;
-								left: 0;
-							border-left: 6px solid $lightGrey-color;
-							border-bottom: 6px solid transparent;
-							border-top: 6px solid transparent;
-							transform: translate(0, -45%);
+							@include list-bullet;
 						}
 					}
 				}
 
 				ul.contact-list{
-					
+
 					li{
 						display: block;
 						margin: 0 0 15px 0;

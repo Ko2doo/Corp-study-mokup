@@ -24,9 +24,6 @@ html, body {
   max-width: 1173px;
   width: 100%;
   height: auto;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,9 +414,6 @@ html, body {
     margin-bottom: 28px; }
 
 .company-info .content-container {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
