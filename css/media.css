@@ -1,8 +1,10 @@
 @media (max-width: 768px) {
   .header {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .header {
-    width: 100%; } }
-
-/*# sourceMappingURL=media.css.map */
+    width: 100%;
+  }
+}

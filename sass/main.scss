@@ -2,6 +2,8 @@
 @import "global.scss";
 //----------------------------------
 
+// Собираем все в кучку
+@import "stylesheets/stylesheets.scss";
 
 //импортируем файлы:
 @import "block/_header.scss";
