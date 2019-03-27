@@ -5,17 +5,22 @@
   justify-content: space-between;
   width: 100%;
   height: 555px;
-  margin-top: 68px;
+  padding-top: 68px;
   background-color: $service-bg-grey;
 
   .services_list-listblock{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 300px;
-    height: 410px;
+    height: 420px;
+    overflow-y: hidden;
 
-@include headline;
     h2{
-      margin-bottom: 38px;
+      margin-bottom: 20px;
+      font-size: 36px;
+      font-weight: 300;
+      text-align: left;
     }
 
     ul {
@@ -23,7 +28,7 @@
         position: relative;
         display: inline-block;
         padding: 0 0 0 25px;
-        margin: 0 0 14px 0;
+        margin: 0 0 16px 0;
         font-size: 14px;
         color: $darkGrey-color;
       &::before{
@@ -34,74 +39,88 @@
   }
 
 
-.services_list-work{
-  width: 380px;
-  height: 410px;
+.services_list-work-and-business{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 770px;
+  height: 420px;
+  margin-left: 10px;
 
-
-    div:last-of-type{
-      margin-top: 70px;
-    }
-
-  @include headline;
       h2{
-        margin-bottom: 38px;
+        font-size: 36px;
+        font-weight: 300;
       }
+
+.services_list-wework{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 380px;
+height: 350px;
+
+.services_list-wework-block{
+  width: 100%;
+  height: 137px;
 
       img{
         float: left;
         clear: both;
         margin-right: 30px;
+        margin-top: 5px;
       }
 
       h3, p{
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      p{
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+}
+}
+
+.services_list-businessplan{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 280px;
+height: 350px;
+
+.services_list-businessplan-block{
+    width: 100%;
+    height: 136px;
+
+      h3,p,a{
         flex-flow: column;
         justify-content: space-between;
       }
 
-      h3{
-        margin-bottom: 20px;
-      }
-
       p{
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 20px;
         font-size: 14px;
-      }
-
-}
-
-.services_list-business{
-  width: 300px;
-  height: 410px;
-
-    @include headline;
-        h2{
-          margin-bottom: 38px;
-        }
-
-
-        div:last-of-type{
-          margin-top: 50px;
-        }
-
-.services_list-business-block{
-  height: 170px;
-
-
-      h3{
-        margin-bottom: 20px;
-      }
-
-      p{
-        font-size: 14px;
+        text-align: left;
+        word-wrap: break-word;
       }
 
       a{
+        display: block;
         @include openSans-regular;
+        font-size: 16px;
+        color: $darkGreyLink-color;
+        transition: $easeIn-2s;
       &:hover{
         color: $general-color-hover;
         transition: color $easeIn-2s;
       }
     }
-  }
  }
+}
+}
 }
