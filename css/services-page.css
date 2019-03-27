@@ -105,7 +105,8 @@
     margin-left: 10px; }
     .services_list .services_list-work-and-business h2 {
       font-size: 36px;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 20px; }
     .services_list .services_list-work-and-business .services_list-wework {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -117,76 +118,90 @@
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      width: 380px;
-      height: 350px; }
-      .services_list .services_list-work-and-business .services_list-wework .services_list-wework-block {
-        width: 100%;
-        height: 137px; }
-        .services_list .services_list-work-and-business .services_list-wework .services_list-wework-block img {
-          float: left;
-          clear: both;
-          margin-right: 30px;
-          margin-top: 5px; }
-        .services_list .services_list-work-and-business .services_list-wework .services_list-wework-block h3, .services_list .services_list-work-and-business .services_list-wework .services_list-wework-block p {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-        .services_list .services_list-work-and-business .services_list-wework .services_list-wework-block p {
-          display: block;
-          margin-top: 20px;
-          font-size: 14px; }
+      width: 49%;
+      height: 100%; }
+      .services_list .services_list-work-and-business .services_list-wework section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: 350px; }
+        .services_list .services_list-work-and-business .services_list-wework section .services_list-wework-block {
+          width: 100%;
+          height: 137px; }
+          .services_list .services_list-work-and-business .services_list-wework section .services_list-wework-block img {
+            float: left;
+            clear: both;
+            margin-right: 30px;
+            margin-top: 5px; }
+          .services_list .services_list-work-and-business .services_list-wework section .services_list-wework-block h3, .services_list .services_list-work-and-business .services_list-wework section .services_list-wework-block p {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+          .services_list .services_list-work-and-business .services_list-wework section .services_list-wework-block p {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px; }
     .services_list .services_list-work-and-business .services_list-businessplan {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 280px;
-      height: 350px; }
-      .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block {
-        width: 100%;
-        height: 136px; }
-        .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block h3, .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block p, .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block a {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-flow: column;
-                  flex-flow: column;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-        .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block p {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-flow: row wrap;
-                  flex-flow: row wrap;
-          margin-top: 20px;
-          font-size: 14px;
-          text-align: left;
-          word-wrap: break-word; }
-        .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block a {
-          display: block;
-          font-family: 'OpenSans-Regular';
-          font-weight: 400;
-          font-size: 16px;
-          color: #5c5c5c;
-          -webkit-transition: 0.2s ease-in;
-          transition: 0.2s ease-in; }
-          .services_list .services_list-work-and-business .services_list-businessplan .services_list-businessplan-block a:hover {
-            color: #1babb3;
-            -webkit-transition: color 0.2s ease-in;
-            transition: color 0.2s ease-in; }
+      width: 36%;
+      height: 100%; }
+      .services_list .services_list-work-and-business .services_list-businessplan section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: 350px; }
+        .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block {
+          width: 100%;
+          height: 136px; }
+          .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block h3, .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block p, .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block a {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: column;
+                    flex-flow: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+          .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block p {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: left;
+            word-wrap: break-word; }
+          .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block a {
+            display: block;
+            font-family: 'OpenSans-Regular';
+            font-weight: 400;
+            font-size: 16px;
+            color: #5c5c5c;
+            -webkit-transition: 0.2s ease-in;
+            transition: 0.2s ease-in; }
+            .services_list .services_list-work-and-business .services_list-businessplan section .services_list-businessplan-block a:hover {
+              color: #1babb3;
+              -webkit-transition: color 0.2s ease-in;
+              transition: color 0.2s ease-in; }
 
 .methods {
   width: 100%;
