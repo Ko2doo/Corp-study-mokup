@@ -31,22 +31,22 @@
         margin: 0 0 16px 0;
         font-size: 14px;
         color: $darkGrey-color;
-      &::before{
-        @include list-bullet;
-      }
-    }
+          &::before{
+            @include list-bullet;
+          }
+        }
     }
   }
 
 
-.services_list-work-and-business{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 770px;
-  height: 420px;
-  margin-left: 10px;
+  .services_list-work-and-business{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 770px;
+    height: 420px;
+    margin-left: 10px;
 
       h2{
         font-size: 36px;
@@ -54,85 +54,85 @@
         margin-bottom: 20px;
       }
 
-.services_list-wework{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 49%;
-height: 100%;
+    .services_list-wework{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 49%;
+      height: 100%;
 
-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 350px;
-
-.services_list-wework-block{
-  width: 100%;
-  height: 137px;
-
-      img{
-        float: left;
-        clear: both;
-        margin-right: 30px;
-        margin-top: 5px;
-      }
-
-      h3, p{
+      section{
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-      }
+        height: 350px;
 
-      p{
-        display: block;
-        margin-top: 20px;
-        font-size: 14px;
+        .services_list-wework-block{
+          width: 100%;
+          height: 137px;
+
+            img{
+              float: left;
+              clear: both;
+              margin-right: 30px;
+              margin-top: 5px;
+            }
+
+            h3, p{
+              flex-direction: column;
+              justify-content: space-between;
+            }
+
+            p{
+              display: block;
+              margin-top: 20px;
+              font-size: 14px;
+            }
+        }
       }
     }
-}
-}
 
-.services_list-businessplan{
-width: 36%;
-height: 100%;
+    .services_list-businessplan{
+      width: 36%;
+      height: 100%;
 
-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 350px;
-
-.services_list-businessplan-block{
-    width: 100%;
-    height: 136px;
-
-      h3,p,a{
-        flex-flow: column;
-        justify-content: space-between;
-      }
-
-      p{
+      section{
         display: flex;
-        flex-flow: row wrap;
-        margin-top: 20px;
-        font-size: 14px;
-        text-align: left;
-        word-wrap: break-word;
-      }
+        flex-direction: column;
+        justify-content: space-between;
+        height: 350px;
 
-      a{
-        display: block;
-        @include openSans-regular;
-        font-size: 16px;
-        color: $darkGreyLink-color;
-        transition: $easeIn-2s;
-      &:hover{
-        color: $general-color-hover;
-        transition: color $easeIn-2s;
+        .services_list-businessplan-block{
+          width: 100%;
+          height: 136px;
+
+            h3,p,a{
+              flex-flow: column;
+              justify-content: space-between;
+            }
+
+            p{
+              display: flex;
+              flex-flow: row wrap;
+              margin-top: 20px;
+              font-size: 14px;
+              text-align: left;
+              word-wrap: break-word;
+            }
+
+            a{
+              display: block;
+              @include openSans-regular;
+              font-size: 16px;
+              color: $darkGreyLink-color;
+              transition: $easeIn-2s;
+                &:hover{
+                  color: $general-color-hover;
+                  transition: color $easeIn-2s;
+                }
+            }
+        }
       }
     }
- }
-}
-}
-}
+  }
 }
