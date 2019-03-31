@@ -1,55 +1,96 @@
 .company-info{
+	display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 25%;
 
-	.content-container{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: nowrap;
-		flex-direction: inherit;
+	h2{
+		width: 100%;
+		margin-bottom: 30px;
+		font:{
+			size: 24px;
+			width: 700;
+		}
 	}
-	.block{
-		width: 30%;
-		height: auto;
-		padding: 0 13px 0 13px;
-		background: transparent;
 
-			.block-body{
-				margin-top: 35px;
-				p{
-					font-size: 14px;
-					text-align: left;
-					img{
-						margin: 0 30px 0 0;
-						float: left;
-					}
+	.company-info-about-block{
+		width: 440px;
+		height: 85%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+		.company-info-about-block-body{
+			width: 100%;
+			height: 180px;
+			margin-bottom: 70px;
+
+			img{
+				float: left;
+				margin-right: 30px;
 				}
 
-				ul.sol-list{
-
-					li{
-						position: relative;
-						display: inline-block;
-						padding: 0 0 0 25px;
-						margin: 0 0 15px 0;
-						font-size: 16px;
-						color: $darkGrey-color;
-						&:before{
-							@include list-bullet;
-						}
-					}
-				}
-
-				ul.contact-list{
-
-					li{
-						display: block;
-						margin: 0 0 15px 0;
-						a{
-							font-size: 16px;
-							color: $darkGrey-color;
-						}
-					}
-				}
+			p{
+				@include openSans-light;
+				font-size: 14px;
 			}
-	}
+		} //конец company-info-about-block-body
+	} //конец company-info-about-block
 
-}
+	.company-info-solution-block{
+		width: 280px;
+		height: 85%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+		.company-info-solution-block-body{
+			width: 100%;
+			height: 180px;
+
+			ul{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 100%;
+				li{
+					position: relative;
+					padding-left: 25px;
+					font-size: 14px;
+					color: $darkGrey-color;
+					&::before{
+						@include list-bullet;
+					}
+				}
+			} //конец ul
+		} //конец company-info-solution-block-body
+} //конец company-info-solution-block
+
+	.company-info-contact-block{
+		width: 245px;
+		height: 85%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+		.company-info-contact-block-body{
+			width: 100%;
+			height: 180px;
+
+			ul.contact-list{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 117px;
+
+				li{
+					font-size: 14px;
+
+					a{
+						font-size: 14px;
+						color: $darkGrey-color;
+					}
+				}
+			} //конец ul
+		} //конец company-info-contact-block-body
+	} //конец company-info-contact-block
+} //конец родительского блока

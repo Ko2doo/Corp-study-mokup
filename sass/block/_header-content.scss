@@ -1,0 +1,71 @@
+.tile-block{
+  margin-top: 50px;
+  display: flex;
+
+  .block-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    position: relative;
+
+    .box{
+      width: 185px;
+      height: 185px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .icon{
+        font-size: 60px;
+        z-index: 15;
+        color: $general-color;
+      }
+
+      .text-info{
+        margin-top: 32px;
+        font-size: 18px;
+        z-index: 15;
+        color: $general-color;
+      }
+    }  //конец box
+
+    .box1,
+    .box4{
+      transition: $easeOut-3s;
+      background: $background-darkGreen;
+        &:hover{
+          transition: $easeIn-2s;
+          background: $background-lightGreen;
+        }
+    }  //конец 1,4
+
+    .box2,
+    .box3{
+      transition: $easeOut-3s;
+      background: $background-lightGreen;
+        &:hover{
+          transition: $easeIn-2s;
+          background: $background-darkGreen;
+        }
+    }  //конец box2,3
+  }  //конец block-box
+
+  .text-block{
+    margin-left: 30px;
+
+    h1.headline-big{
+      font-size: 50px;
+      display: inline-block;
+      color: $general-color-hover;
+    }
+    p{
+      font-size: 18px;
+      margin-top: 51px;
+      color: $general-color;
+    }
+  }  //конец text-block
+}  //конец родительского блока

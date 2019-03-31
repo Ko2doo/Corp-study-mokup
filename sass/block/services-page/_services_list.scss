@@ -26,19 +26,21 @@
     	  text-align: left;
     	}
 
-    	ul {
-    	  li{
-    	    position: relative;
-    	    display: inline-block;
-    	    padding: 0 0 0 25px;
-    	    margin: 0 0 16px 0;
-    	    font-size: 14px;
-   	     	color: $darkGrey-color;
-    	      &::before{
-    	        @include list-bullet;
-          	}
-        }
-    	} //конец ul
+      ul {
+      	display: flex;
+      	flex-direction: column;
+      	justify-content: space-between;
+      	height: 100%;
+      	li{
+      		position: relative;
+      		padding-left: 25px;
+      		font-size: 14px;
+      		color: $darkGrey-color;
+      			&::before{
+      				@include list-bullet;
+      			}
+      	}
+      } //конец ul
 	} //конец list_block
 
   .services_list-wework{

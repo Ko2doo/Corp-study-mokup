@@ -1,21 +1,20 @@
-
-/* Блок Welcome*/
 .welcome {
   display: block;
   margin: 65px auto;
-  width: 810px;
-  height: 212px;
+  width: 85%;
+  height: 222px;
   text-align: center;
   overflow: hidden;
-.welcome_headling {
-    font-family: 'OpenSans-Light';
-    font-weight: 300;
-    font-size: 72px; }
 
-&:first-of-type p{
-    font-size: 16px;
+  h2 {
+      @include openSans-light;
+      font-size: 72px;
   }
-&:last-of-type p{
-    font-size: 14px;
+
+  p:first-of-type{
+      font-size: 16px;
   }
-}
+  p:last-of-type{
+      font-size: 14px;
+  }
+}  //конец welcome
