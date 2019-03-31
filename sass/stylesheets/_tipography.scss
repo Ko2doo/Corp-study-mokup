@@ -28,3 +28,14 @@
 			}
 	}
 }
+
+@mixin list-bullet{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-left: 6px solid $lightGrey-color;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+  transform: translate(0, -45%);
+}

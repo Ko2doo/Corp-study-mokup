@@ -1,36 +1,37 @@
 .features {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  height: 360px;
+  height: 20%;
 
-  .features-headling{
-    margin-top: 75px;
-    margin-bottom: 45px;
-  }
-}
-
-.features_services{
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  @include openSans-regular;
-
-  .features_services-block{
-    width: 175px;
-    height: 150px;
-
-    .features_services-block-headling{
-      font-size: 16px;
-      color: $general-color-hover;
-      margin-bottom: 16px;
+    h2{
+      width: 100%;
+      margin-top: 75px;
+      margin-bottom: 45px;
     }
 
-    .features_services-block-p{
-      font-size: 14px;
-    }
-  }
-}
+      .features_services{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        @include openSans-regular;
+
+          .features_services-block{
+            width: 175px;
+            height: 150px;
+            margin-bottom: 70px;
+
+              h3{
+                font-size: 16px;
+                color: $general-color-hover;
+                margin-bottom: 16px;
+              }
+
+              p{
+                font-size: 14px;
+              }
+          }  //конец features_services-block
+      }  //конец features_services
+} //конец родительского блока
