@@ -33,8 +33,7 @@
       }
     }  //конец box
 
-    .box1,
-    .box4{
+    div:nth-of-type(1),div:nth-of-type(4){
       transition: $easeOut-3s;
       background: $background-darkGreen;
         &:hover{
@@ -43,8 +42,7 @@
         }
     }  //конец 1,4
 
-    .box2,
-    .box3{
+    div:nth-of-type(2),div:nth-of-type(3){
       transition: $easeOut-3s;
       background: $background-lightGreen;
         &:hover{

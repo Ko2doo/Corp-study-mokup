@@ -18,124 +18,124 @@ html, body {
   text-align: left; }
 
 .aboutUs-information {
-  padding: 73px 0 37px 0; }
+  width: 100%;
+  height: 20%; }
+  .aboutUs-information h2 {
+    margin-top: 30px;
+    margin-bottom: 35px; }
   .aboutUs-information .dynamic-box {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    width: 100%;
+    height: 75%;
+    margin-bottom: 30px; }
+    .aboutUs-information .dynamic-box img {
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 5px; }
+    .aboutUs-information .dynamic-box p {
+      display: block;
+      height: auto;
+      margin-right: 10px; }
+    .aboutUs-information .dynamic-box p:first-of-type {
+      font-size: 16px;
+      font-family: 'OpenSans-Bold';
+      font-weight: 700; }
+    .aboutUs-information .dynamic-box p:last-of-type {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #5e5d5d; }
+
+.offer {
+  width: 100%;
+  height: 25%;
+  background-color: #fafdfe; }
+  .offer h2 {
+    margin-top: 30px;
+    margin-bottom: 35px; }
+  .offer .offer-boxing {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 35px; }
-    .aboutUs-information .dynamic-box .image-box {
-      width: 25%;
-      height: auto;
-      display: block; }
-      .aboutUs-information .dynamic-box .image-box img {
-        width: 100%;
-        height: auto; }
-    .aboutUs-information .dynamic-box .text-box {
-      width: 70%;
-      height: auto;
-      display: block; }
-      .aboutUs-information .dynamic-box .text-box .text-mark-black {
-        font-size: 16px; }
-      .aboutUs-information .dynamic-box .text-box .no-mark {
-        margin-top: 28px;
-        font-size: 14px;
-        color: #5e5d5d; }
-
-.offer {
-  padding: 37px 0 37px 0; }
-  .offer .offer-boxing {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin-top: 35px; }
+    margin-bottom: 30px; }
     .offer .offer-boxing .box {
       width: 32%;
+      min-width: 370px;
       height: auto;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-bottom: 35px; }
       .offer .offer-boxing .box .number {
-        border-radius: 50%;
-        width: 65px;
-        height: 65px;
-        display: -moz-inline-flex;
-        display: -ms-inline-flex;
-        display: -o-inline-flex;
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
         background: #00b1ba; }
-        .offer .offer-boxing .box .number span.numb {
-          display: inline-block;
+        .offer .offer-boxing .box .number span {
           font-size: 32px;
           color: #ffffff; }
-      .offer .offer-boxing .box .body {
+      .offer .offer-boxing .box .box-body {
         width: 70%;
         padding-left: 30px; }
-      .offer .offer-boxing .box span.headline-box {
-        font-size: 18px;
-        display: block; }
-      .offer .offer-boxing .box span.text-box {
-        margin-top: 24px;
-        display: block;
-        font-size: 14px; }
+        .offer .offer-boxing .box .box-body h3 {
+          font-size: 18px;
+          display: block; }
+        .offer .offer-boxing .box .box-body p {
+          display: block;
+          margin-top: 24px;
+          font-size: 14px; }
 
 .our-staff {
-  padding: 37px 0 37px 0; }
+  width: 100%;
+  height: 25%; }
+  .our-staff h2 {
+    margin-top: 30px;
+    margin-bottom: 35px; }
   .our-staff .staff-cards {
     width: 100%;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .our-staff .card {
-    width: 20%;
-    height: auto;
-    display: inline-block;
-    padding: 0 15px 0 15px; }
-    .our-staff .card .card-header img {
-      width: 100%;
-      border: 1px solid #929191; }
-    .our-staff .card .card-body {
-      margin-top: 38px; }
-      .our-staff .card .card-body span.staff-name {
-        display: block;
-        font-size: 16px; }
-      .our-staff .card .card-body p.text-block {
-        margin-top: 16px;
-        font-size: 14px; }
+    .our-staff .staff-cards .card {
+      width: 15%;
+      min-width: 160px;
+      height: auto;
+      display: inline-block;
+      margin-bottom: 30px; }
+      .our-staff .staff-cards .card img {
+        width: 100%;
+        border: 1px solid #929191; }
+      .our-staff .staff-cards .card .card-body {
+        margin-top: 38px; }
+        .our-staff .staff-cards .card .card-body span {
+          display: block;
+          font-size: 16px;
+          font-family: 'OpenSans-Bold';
+          font-weight: 700;
+          opacity: .6; }
+        .our-staff .staff-cards .card .card-body p {
+          margin-top: 16px;
+          font-size: 14px; }
 
 /*# sourceMappingURL=about.css.map */

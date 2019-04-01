@@ -148,23 +148,19 @@ header {
         font-size: 18px;
         z-index: 15;
         color: #ffffff; }
-    .tile-block .block-box .box1,
-    .tile-block .block-box .box4 {
+    .tile-block .block-box div:nth-of-type(1), .tile-block .block-box div:nth-of-type(4) {
       -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       background: #088389; }
-      .tile-block .block-box .box1:hover,
-      .tile-block .block-box .box4:hover {
+      .tile-block .block-box div:nth-of-type(1):hover, .tile-block .block-box div:nth-of-type(4):hover {
         -webkit-transition: 0.2s ease-in;
         transition: 0.2s ease-in;
         background: #00b1ba; }
-    .tile-block .block-box .box2,
-    .tile-block .block-box .box3 {
+    .tile-block .block-box div:nth-of-type(2), .tile-block .block-box div:nth-of-type(3) {
       -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       background: #00b1ba; }
-      .tile-block .block-box .box2:hover,
-      .tile-block .block-box .box3:hover {
+      .tile-block .block-box div:nth-of-type(2):hover, .tile-block .block-box div:nth-of-type(3):hover {
         -webkit-transition: 0.2s ease-in;
         transition: 0.2s ease-in;
         background: #088389; }
