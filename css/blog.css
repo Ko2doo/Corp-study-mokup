@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none; }
+
+html, body {
+  font-family: 'OpenSans-Light';
+  font-weight: 300; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+  section h2 {
+    margin-top: 30px;
+    margin-bottom: 35px; }
+  section .blog_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 70px; }
+    section .blog_wrapper .blog_wrapper-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 15%;
+      margin-bottom: 75px; }
+      section .blog_wrapper .blog_wrapper-box .blog-date {
+        display: flex;
+        flex-direction: column;
+        width: 6%;
+        min-width: 65px; }
+        section .blog_wrapper .blog_wrapper-box .blog-date .number {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 65px;
+          height: 65px;
+          margin: 35px auto 0 auto;
+          background: #00b1ba; }
+          section .blog_wrapper .blog_wrapper-box .blog-date .number span {
+            font-size: 32px;
+            color: #ffffff; }
+        section .blog_wrapper .blog_wrapper-box .blog-date .date {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin: 15px auto; }
+          section .blog_wrapper .blog_wrapper-box .blog-date .date span {
+            font-size: 18px; }
+          section .blog_wrapper .blog_wrapper-box .blog-date .date span:first-of-type {
+            font-size: 24px;
+            font-family: 'OpenSans-Bold';
+            font-weight: 700; }
+          section .blog_wrapper .blog_wrapper-box .blog-date .date span:last-of-type {
+            font-family: 'OpenSans-Light';
+            font-weight: 300; }
+      section .blog_wrapper .blog_wrapper-box .blog-content {
+        width: 90%;
+        min-width: 300px;
+        height: 20%;
+        margin-left: 20px;
+        padding-right: 20px; }
+        section .blog_wrapper .blog_wrapper-box .blog-content img {
+          width: 270px;
+          height: 230px;
+          float: left;
+          clear: both;
+          margin-right: 30px;
+          margin-bottom: 15px; }
+        section .blog_wrapper .blog_wrapper-box .blog-content p {
+          width: auto;
+          font-size: 14px; }
+        section .blog_wrapper .blog_wrapper-box .blog-content p:nth-of-type(1) {
+          font-family: 'OpenSans-Bold';
+          font-weight: 700; }
+        section .blog_wrapper .blog_wrapper-box .blog-content p:nth-of-type(2) {
+          font-family: 'OpenSans-light-italic';
+          font-weight: 300;
+          font-style: italic; }
+        section .blog_wrapper .blog_wrapper-box .blog-content p:nth-of-type(3) {
+          font-family: 'OpenSans-Light';
+          font-weight: 300; }
+        section .blog_wrapper .blog_wrapper-box .blog-content a {
+          float: right;
+          font-family: 'OpenSans-Regular';
+          font-weight: 400;
+          font-size: 16px;
+          color: #5c5c5c;
+          transition: 0.2s ease-in; }
+          section .blog_wrapper .blog_wrapper-box .blog-content a:hover {
+            color: #1babb3;
+            transition: color 0.2s ease-in; }
+        section .blog_wrapper .blog_wrapper-box .blog-content .massages {
+          width: 60px;
+          height: 30px;
+          float: right; }
+          section .blog_wrapper .blog_wrapper-box .blog-content .massages .comment-icon {
+            font-size: 30px;
+            color: #00b1ba; }
+          section .blog_wrapper .blog_wrapper-box .blog-content .massages span {
+            position: absolute;
+            margin-top: .5em;
+            font-family: 'OpenSans-Bold';
+            font-weight: 700;
+            margin-left: 10px;
+            font-size: 14px; }
+  section .page-to-top {
+    align-self: flex-end;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px; }
+    section .page-to-top .page-to-top-icon {
+      font-size: 55px;
+      color: #6b6b6b;
+      transition: color 0.2s ease-in; }
+      section .page-to-top .page-to-top-icon:hover {
+        color: #1babb3;
+        transition: color 0.2s ease-in; }
+
+/*# sourceMappingURL=blog.css.map */

@@ -16,6 +16,13 @@
 		weight: 300;
 	}
 }
+@mixin openSans-light-italic{
+	font:{
+		family: 'OpenSans-light-italic';
+		weight: 300;
+		style: italic;
+	}
+}
 @mixin headline{
 	.headline-mini{
 		text-align: center;
