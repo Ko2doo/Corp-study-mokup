@@ -1,0 +1,21 @@
+.information_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  @include openSans-regular;
+  line-height: 35px;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  h3{
+    @include openSans-light;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  p:nth-of-type(3){
+    line-height: normal;
+  }
+} // конец родительского блока

@@ -80,6 +80,7 @@
 					bottom: 0;
 				height: auto;
 				background: $background-lightGreen;
+				transition: $easeIn-2s;
 				&:hover{
 					filter: brightness(125%);
 					transition: $easeIn-2s;

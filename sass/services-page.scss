@@ -1,13 +1,6 @@
 // Собираем все в кучку
 @import "stylesheets/stylesheets.scss";
 
-.modernized{
-  background: url(../images/slide.jpg) no-repeat top;
-  height: auto;
-  padding: 18px 0px 50px 0px;
-}
-
-
 @import "block/services-page/_features.scss";
 @import "block/services-page/_services_list.scss";
 @import "block/services-page/_method.scss";

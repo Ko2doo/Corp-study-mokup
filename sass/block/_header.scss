@@ -16,10 +16,11 @@
 @include content-container;
 @include text-mark;
 @include headline;
+@include to-top-icon;
 
 
 header{
-	background: url(../images/slide.jpg) no-repeat top center;
+  background: url(../images/slide.jpg) no-repeat top;
 	background-size: cover;
 	width: 100%;
 	height: 100%;

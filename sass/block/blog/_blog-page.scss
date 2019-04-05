@@ -139,22 +139,4 @@ section{
         } //конец blog-content
       } //конец blog_wrapper-box
   } //конец blog_wrapper
-
-  .page-to-top{
-    align-self: flex-end;
-    width: 55px;
-    height: 55px;
-    margin-right: 10px;
-
-
-    .page-to-top-icon{
-      font-size: 55px;
-      color: $darkGreyArrow-color;
-      transition: color $easeIn-2s;
-      &:hover{
-        color: $general-color-hover;
-        transition: color $easeIn-2s;
-      }
-    }
-  }
 } //конец родительского блока

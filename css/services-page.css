@@ -2,6 +2,18 @@
   padding: 0;
   margin: 0; }
 
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+.content-container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 ul, li, a {
   list-style: none;
   text-decoration: none; }
@@ -9,11 +21,6 @@ ul, li, a {
 html, body {
   font-family: 'OpenSans-Light';
   font-weight: 300; }
-
-.modernized {
-  background: url(../images/slide.jpg) no-repeat top;
-  height: auto;
-  padding: 18px 0px 50px 0px; }
 
 .features {
   display: -webkit-box;

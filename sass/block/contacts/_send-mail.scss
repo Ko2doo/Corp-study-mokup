@@ -1,0 +1,70 @@
+.send_mail_block{
+  width: 100%;
+  height: 40%;
+  @include openSans-regular;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+
+  form{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    .name{
+      width: 30%;
+      min-width: 200px;
+      height: 20px;
+      margin-bottom: 30px;
+    }
+
+    .email{
+      width: 30%;
+      min-width: 200px;
+      height: 20px;
+      margin-bottom: 30px;
+    }
+
+    .phone{
+      width: 30%;
+      min-width: 200px;
+      height: 20px;
+      margin-bottom: 30px;
+    }
+
+    .comment{
+      width: 100%;
+      min-width: 200px;
+      height: 60%;
+      margin-bottom: 30px;
+    }
+
+    button{
+      width: 130px;
+      height: 40px;
+      text-align: center;
+      border: none;
+      outline: none;
+      background-color: $background-lightGreen;
+      font-size: 16px;
+      color: $general-color;
+      float: right;
+      margin-left: auto;
+      cursor: pointer;
+      transition: $easeIn-2s;
+      &:hover{
+        filter: brightness(125%);
+        transition: $easeIn-2s;
+      }
+      &:active{
+        background-color: $background-darkGreen;
+        transition: $easeIn-2s;
+      }
+    } // конец button
+  } // конец form
+} // конец родительского блока
