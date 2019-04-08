@@ -571,9 +571,6 @@ main {
 
 .footer {
   height: 85px;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,11 +580,19 @@ main {
   background-color: #00b1ba; }
   .footer .foot-info span {
     font-size: 22px;
-    color: #929191; }
+    color: #000000; }
     .footer .foot-info span a {
-      color: #5e5d5d; }
-  .footer .foot-info span.designed {
+      color: #4a4a4a;
+      -webkit-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out; }
+      .footer .foot-info span a:hover {
+        color: #ffffff;
+        -webkit-transition: color 0.2s ease-in;
+        transition: color 0.2s ease-in; }
+  .footer .foot-info .grey {
     font-size: 14px;
-    color: #929191; }
+    color: #4a4a4a; }
+  .footer .foot-info span:last-of-type {
+    opacity: .5; }
 
 /*# sourceMappingURL=main.css.map */
