@@ -1,99 +1,101 @@
 .meter{
-	padding: 20px 0 20px 0;
-	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	height: 25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background: $background-darkGreen;
 
-		.meter-block{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-		.meter-box{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			align-items: center;
-				.left{
-					margin-right: 16px;
-					span.qty{
+	.meter-box{
+		display: flex;
+		align-items: center;
+		width: 235px;
+		height: 80px;
+
+		.left{
+			margin-right: 16px;
+				span.qty{
+					font:{
+						size: 72px;
+						weight: 300;
+					}
+				color: $general-color;
+				}
+			}
+
+			.right{
+				span.description{
+					font-size: 14px;
+					color: $general-color;
+				}
+			}
+	} //конец meter-box
+
+	.support-info{
+		display: flex;
+		flex-direction: row;
+		align-self: flex-end;
+		width: 290px;
+		height: 80px;
+		margin-top: auto;
+		margin-bottom: auto;
+		background: $general-color;
+
+			.support-table{
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				width: 75%;
+
+					span:first-of-type{
+						width: 50%;
 						font:{
-							size: 40px;
+							size: 60px;
+							weight: 300;
+						}
+					}
+
+					span:last-of-type{
+						width: 35%;
+						margin-top: auto;
+						margin-bottom: auto;
+						font:{
+							size: 16px;
+							weight: bold;
+						}
+					}
+			} //конец support-table
+
+			.clock-block{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 25%;
+				position: relative;
+					right: 0;
+					top: 0;
+					bottom: 0;
+				height: auto;
+				background: $background-lightGreen;
+				transition: $easeIn-2s;
+				&:hover{
+					filter: brightness(125%);
+					transition: $easeIn-2s;
+				}
+
+					a.click-here{
+						font:{
+							size: 14px;
 							weight: 450;
 						}
+						padding: auto;
+						transform: rotate(-90deg);
 						color: $general-color;
+						transition: $easeIn-2s;
 					}
-				}
-				.right{
-					span.description{
-						font-size: 14px;
-						color: $general-color;
-					}
-				}
-		}
-		.support-info{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			width: 270px;
-			height: 95px;
-			position: relative;
-			background: $general-color;
-				
-				.support-table{
-					display: -webkit-flex;
-					display: -moz-flex;
-					display: -ms-flex;
-					display: -o-flex;
-					display: flex;
-					align-items: center;
-					width: 67%;
-					padding: 0 13px 0 13px;
-
-						span.work-time{
-							font:{
-								size: 40px;
-								weight: 600;
-							}
-							margin-right: 23px;
-						}
-						span.text{
-							font:{
-								size: 16px;
-								weight: 650;
-							}
-						}
-				}
-					.clock-block{
-						position: relative;
-							right: 0;
-							top: 0;
-							bottom: 0;
-						height: auto;
-						display: -webkit-flex;
-						display: -moz-flex;
-						display: -ms-flex;
-						display: -o-flex;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						background: $background-lightGreen;
-
-							a.click-here{
-								font:{
-									size: 14px;
-									weight: 450;
-								}
-								transform: rotate(-90deg);
-								color: $general-color;
-							}
-					}
-		}
-}
+			}  //конец clock-block
+		}  //конец support-info
+}  //конец родительского блока

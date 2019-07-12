@@ -1,0 +1,124 @@
+//Общие параметры
+.services{
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 60%;
+  background-color: $service-bg-grey;
+
+  h2{
+    font-size: 36px;
+  }
+
+    .advantages{
+      display: flex;
+      flex-direction: column;
+	  	flex-wrap: wrap;
+      justify-content: space-between;
+	  	width: 650px;
+      height: 90%;
+	  	box-sizing: border-box;
+      padding-top: 20px;
+      margin-top: 70px;
+	  	margin-bottom: 70px;
+
+        .advantages-block{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          height: 85%;
+          margin-top: 20px;
+
+          img{
+            width: 170px;
+            height: 166px;
+            margin-top: 5px;
+           }
+
+          .advantages-subblock{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 320px;
+            width: 70%;
+            height: 45%;
+
+            h3{
+              height: fit-content;
+              font:{
+                size: 24px;
+                width: 700;
+              }
+            }
+
+            p{
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             font-size: 14px;
+             text-align: left;
+            }
+
+            a{
+              @include openSans-regular;
+              font-size: 22px;
+              &:hover{
+                color: $general-color-hover;
+                transition: color $easeIn-2s;
+              }
+            }
+          } //конец advantages-subblock
+        } //конец advantages-block
+    } //конец advantages
+
+    .testimonials{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 375px;
+      height: 90%;
+      box-sizing: border-box;
+      padding-top: 20px;
+      margin-top: 70px;
+	  	margin-bottom: 70px;
+
+        h2{
+          font-size: 36px;
+        }
+
+        .testimonials-block{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 170px;
+          margin-top: 20px;
+          background-color: $quote-bg-grey;
+
+          cite{
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+            width: 260px;
+            height: 80px;
+            font-size: 14px;
+            text-align: center;
+          }
+
+          .author{
+            margin-top: 14px;
+            margin-right: 57px;
+            @include openSans-bold;
+            font-size: 16px;
+            text-align: right;
+            color: $darkGrey-color;
+            opacity: .9;
+          }
+        } //конец testimonials-block
+    } //конец testimonials
+} //конец родительского блока

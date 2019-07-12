@@ -1,0 +1,57 @@
+.offer{
+  width: 100%;
+  height: 25%;
+  background-color: $service-bg-grey;
+
+  h2{
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .offer-boxing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+      .box{
+        width: 32%;
+        min-width: 370px;
+        height: auto;
+        display: flex;
+        margin-bottom: 35px;
+
+          .number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            background: $background-lightGreen;
+
+              span{
+                font-size: 32px;
+                color: $general-color;
+              }
+          } //конец number
+
+          .box-body{
+            width: 70%;
+            padding-left: 30px;
+
+            h3{
+              font-size: 18px;
+              display: block;
+            }
+
+            p{
+              display: block;
+              margin-top: 24px;
+              font-size: 14px;
+            }
+        } //конец box-body
+      } //конец box
+  } //конец offer-boxing
+} //конец родительского блока

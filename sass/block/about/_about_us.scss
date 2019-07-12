@@ -1,0 +1,41 @@
+.aboutus-information{
+  width: 100%;
+  height: 20%;
+
+  h2{
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .dynamic-box{
+    width: 100%;
+    height: 75%;
+    margin-bottom: 30px;
+
+      img{
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 5px;
+      }
+
+      p{
+        display: block;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      p:first-of-type{
+        font: {
+          size: 16px;
+          family: 'OpenSans-Bold';
+          weight: 700;
+        }
+      }
+
+      p:last-of-type{
+        margin-top: 28px;
+        font-size: 14px;
+        color: $darkGrey-color;
+      }
+  } //конец dynamic-box
+} //конец родительского блока

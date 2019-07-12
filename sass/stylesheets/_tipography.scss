@@ -1,0 +1,48 @@
+@mixin openSans-regular{
+	font:{
+		family: 'OpenSans-Regular';
+		weight: 400;
+	}
+}
+@mixin openSans-bold{
+	font:{
+		family: 'OpenSans-Bold';
+		weight: 700;
+	}
+}
+@mixin openSans-light{
+	font:{
+		family: 'OpenSans-Light';
+		weight: 300;
+	}
+}
+@mixin openSans-light-italic{
+	font:{
+		family: 'OpenSans-light-italic';
+		weight: 300;
+		style: italic;
+	}
+}
+@mixin headline{
+	.headline-mini{
+		text-align: center;
+			h2{
+				font:{
+					size: 22px;
+					weight: bold;
+				}
+				color: $black-color;
+			}
+	}
+}
+
+@mixin list-bullet{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-left: 6px solid $lightGrey-color;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+  transform: translate(0, -45%);
+}

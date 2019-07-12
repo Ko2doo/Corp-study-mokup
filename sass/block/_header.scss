@@ -1,16 +1,3 @@
-//Обнуляшки
-*{
-	padding: 0;
-	margin: 0;
-}
-ul,li,a{
-	list-style: none;
-	text-decoration: none;
-}
-html,body{
-	@include openSans-light;
-}
-
 //шрифты
 @font-face{
   font-family: OpenSans-Regular;
@@ -29,141 +16,51 @@ html,body{
 @include content-container;
 @include text-mark;
 @include headline;
+@include to-top-icon;
 
 
-.header{
-	background: url(../images/slide.jpg) no-repeat top right;
-	height: auto;
+header{
+  background: url(../images/slide.jpg) no-repeat top;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 	padding: 18px 0px 50px 0px;
-	
+
 	.custom-container{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		flex-direction: initial;
-	}
 
-	.logotipTop{
-		display: block;
-			img{
-				max-width: 219px;
-				width: 100%;
-				height: auto;
-			}
-	}
+	  .logo{
+	  	display: block;
+		  	img{
+		  		max-width: 219px;
+		  		width: 100%;
+			  	height: auto;
+			  }
+      }
 
-	nav.navigator{
-		display: block;
-		margin-top: 53px;
-		width: 100%;
-			ul,li{
-				display: inline-block;
-			}
-			li{
-				margin-right: 42px;
-			}
-			li,a{
-				@include openSans-regular;
-				color: $general-color;
-				transition: color $easeOut-3s;
-					&:hover{
-						color: $general-color-hover;
-						transition: color $easeIn-2s;
-					}
-			}
-	}
+    	nav{
+	    	display: block;
+	    	margin-top: 53px;
+	    	width: 100%;
+	    		ul{
+	    			display: inline-flex;
+            flex-wrap: wrap;
 
-	.tile-block{
-		margin-top: 50px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
+	    		  li{
+		    	  	margin-right: 42px;
 
-		.block-box{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			max-width: 370px;
-			height: auto;
-			position: relative;
-				.box{
-					width: 185px;
-					height: 185px;
-					display: -webkit-flex;
-					display: -moz-flex;
-					display: -ms-flex;
-					display: -o-flex;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					flex-direction: column;
-					background: $background-darkGreen;
-						&:nth-child(2){
-							transition: background-color $easeOut-3s;
-							background: $background-lightGreen;
-								&:hover{
-									transition: background-color $easeIn-2s;
-									background: $background-darkGreen;
-									&:before{
-										content: '';
-										position: absolute;
-										left: 0;
-										width: 185px;
-										height: 185px;
-										background: $background-lightGreen;
-									}
-								}
-						}
-						&:nth-child(3){
-							transition: background-color $easeOut-3s;
-							background: $background-lightGreen;
-								&:hover{
-									transition: background-color $easeIn-2s;
-									background: $background-darkGreen;
-									&:before{
-										content: '';
-										position: absolute;
-										right: 0;
-										width: 185px;
-										height: 185px;
-										background: $background-lightGreen;
-									}
-								}
-						}
-						.icon{
-							font-size: 60px;
-							z-index: 15;
-							color: $general-color;
-						}
-						.text-info{
-							margin-top: 32px;
-							font-size: 18px;
-							z-index: 15;
-							color: $general-color;
-						}
-				}
-		}
-		.text-block{
-			margin-left: 30px;
-
-				h1.headline-big{
-					font-size: 50px;
-					display: inline-block;
-					color: $general-color-hover;
-				}
-				p{
-					font-size: 18px;
-					margin-top: 51px;
-					color: $general-color;
-				}
-		}
-	}
-}
+			        a{
+		    		    @include openSans-regular;
+			    	    color: $general-color;
+		    		    transition: color $easeOut-3s;
+			    	  	&:hover{
+		    		  		color: $general-color-hover;
+		    		  		transition: color $easeIn-2s;
+		    			  }
+		    	    }
+            }
+	        }  //конец ul
+      }  //конец nav
+  }  //конец custom-container
+}  //конец родительского блока

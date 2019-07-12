@@ -1,0 +1,49 @@
+.our-staff{
+  width: 100%;
+  height: 25%;
+
+  h2{
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .staff-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .card{
+      width: 15%;
+      min-width: 160px;
+      height: auto;
+      display: inline-block;
+      margin-bottom: 30px;
+
+        img{
+          width: 100%;
+          border: 1px solid $lightGrey-color;
+        }
+
+        .card-body{
+          margin-top: 38px;
+
+          span{
+            display: block;
+            font: {
+              size: 16px;
+              family: 'OpenSans-Bold';
+              weight: 700;
+            }
+            opacity: .6;
+          }
+
+          p{
+            margin-top: 16px;
+            font-size: 14px;
+          }
+        } //конец card-body
+      } //конец card
+    }  //конец staff-cards
+  } //конец родительского блока

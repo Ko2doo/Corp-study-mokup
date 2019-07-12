@@ -1,0 +1,142 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+
+  h2{
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .blog_wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 70px;
+
+    .blog_wrapper-box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 15%;
+      margin-bottom: 75px;
+
+    .blog-date{
+      display: flex;
+      flex-direction: column;
+      width: 6%;
+      min-width: 65px;
+
+      .number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        margin: 35px auto 0 auto;
+        background: $background-lightGreen;
+
+          span{
+            font-size: 32px;
+            color: $general-color;
+          }
+      } //конец number
+
+      .date{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 15px auto;
+
+        span{
+          font-size: 18px;
+        }
+
+        span:first-of-type{
+          font-size: 24px;
+          @include openSans-bold;
+        }
+
+        span:last-of-type{
+          @include openSans-light;
+        }
+      } //конец date
+    } //конец blog-date
+
+
+        .blog-content{
+          width: 90%;
+          min-width: 300px;
+          height: 20%;
+          margin-left: 20px;
+          padding-right: 20px;
+
+
+          img{
+            width: 270px;
+            height: 230px;
+            float: left;
+            clear: both;
+            margin-right: 30px;
+            margin-bottom: 15px;
+          }
+
+          p{
+            width: auto;
+            font-size: 14px;
+          }
+
+          p:nth-of-type(1){
+            @include openSans-bold;
+          }
+
+          p:nth-of-type(2){
+            @include openSans-light-italic;
+          }
+
+          p:nth-of-type(3){
+            @include openSans-light;
+          }
+
+          a{
+            float: right;
+            @include openSans-regular;
+            font-size: 16px;
+            color: $darkGreyLink-color;
+            transition: $easeIn-2s;
+              &:hover{
+                color: $general-color-hover;
+                transition: color $easeIn-2s;
+              }
+          }
+
+          .massages{
+            width: 60px;
+            height: 30px;
+            float: right;
+
+            .comment-icon{
+              font-size: 30px;
+              color: $background-lightGreen;
+            }
+
+            span{
+              position: absolute;
+              margin-top: .5em;
+              @include openSans-bold;
+              margin-left: 10px;
+              font-size: 14px;
+            }
+          } //конец massages
+        } //конец blog-content
+      } //конец blog_wrapper-box
+  } //конец blog_wrapper
+} //конец родительского блока

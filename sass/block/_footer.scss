@@ -1,26 +1,32 @@
 .footer{
 	height: 85px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	align-items: center;
 	background-color: $background-lightGreen;
 
 	.foot-info{
-		
+
 		span{
 			font-size: 22px;
-			color: $lightGrey-color;
+			color: $black-color;
 
 				a{
-					color: $darkGrey-color;
+					color: $darkGreyFoot-color;
+					transition: color $easeOut-3s;
+					&:hover{
+						color: $general-color;
+						transition: color $easeIn-2s;
+					}
 				}
 		}
-		span.designed{
-			font-size: 14px;
-			color: $lightGrey-color;
-		}
+
+				.grey{
+					font-size: 14px;
+					color: $darkGreyFoot-color;
+				}
+
+				span:last-of-type{
+					opacity: .5;
+				}
 	}
 }

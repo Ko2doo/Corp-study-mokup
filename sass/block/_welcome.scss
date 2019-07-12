@@ -1,0 +1,20 @@
+.welcome {
+  display: block;
+  margin: 65px auto;
+  width: 85%;
+  height: 222px;
+  text-align: center;
+  overflow: hidden;
+
+  h2 {
+      @include openSans-light;
+      font-size: 72px;
+  }
+
+  p:first-of-type{
+      font-size: 16px;
+  }
+  p:last-of-type{
+      font-size: 14px;
+  }
+}  //конец welcome
